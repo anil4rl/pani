@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Simple Output') {
             steps {
-                echo 'om sri namo venkateshaya'
+                echo 'om sri namo venkateshaya govinda'
             }
         }
     }
