@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        label 'agent5'
+        label 'agent1'
     }
     options {
-        timeout(time: 30, unit: 'MINUTES')
+        timeout(time: 10, unit: 'MINUTES')
         disableConcurrentBuilds()
     }
     parameters {
@@ -20,18 +20,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo This is build'
+                sh 'echo This is anil'
                 sh 'env'
             }
         }
         stage('Test') {
             steps {
-                sh 'echo This is Test'
+                sh 'echo This is siva'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'echo This is Deploy'
+                sh 'echo This is bharsth'
             }
         }
         stage("print params"){
